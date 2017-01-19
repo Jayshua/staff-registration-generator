@@ -1,0 +1,73 @@
+<!doctype html>
+<html>
+<head>
+	<style type="text/css">
+		html, body {
+			font-family: Arial;
+			font-size: 1.1em;
+			margin: 0;
+			padding: 0;
+		}
+
+		h1 {
+			background-color: grey;
+			color: white;
+			font-size: 1.7em;
+			padding: 0.2em;
+			text-align: center;
+		}
+
+		h2 {
+			font-size: 1.2em;
+			font-weight: bold;
+			margin-bottom: 0;
+		}
+
+		p {
+			margin-top: 0;
+			margin-bottom: 0;
+		}
+		p + p {
+			margin-top: 0.5em;
+		}
+
+		pre {
+			font-family: inherit;
+			font-size: inherit;
+			line-height: 1.08em;
+		}
+
+		.page {
+			page-break-after: always;
+		}
+
+		.page:last-of-type {
+			page-break-after: avoid;
+		}
+
+		.columns::after {
+			content: "";
+			display: table;
+			clear: both;
+		}
+
+		.columns > * {
+			width: 32.3333%;
+			margin-right: 1.5%;
+			float: left;
+		}
+		.columns > *:last-of-type {
+			margin-right: 0;
+		}
+
+		.underline {
+			text-decoration: underline;
+		}
+		</style>
+</head>
+<body>
+
+	{{records}}
+
+</body>
+</html>

@@ -1,0 +1,106 @@
+<div class="columns page">
+	<div>
+		<h1>Staff Registration</h1>
+		{{field "Full Name"}}
+		{{field "Gender"}}
+		{{field "Date of Birth"}}
+		{{field "Church Attending"}}
+
+		<h2>Address</h2>
+		{{Address.prettyFormat}}
+
+		<h2>Contact</h2>
+		{{field "Home Phone"}}
+		{{field "Cell Phone"}}
+		{{field "E-mail"}}
+
+		<h2>Mother Information</h2>
+		{{field "Mother's Name"}}
+		{{field "Mother's Email"}}
+		{{field "Mother's Home"}}
+		{{field "Mother's Cell"}}
+		{{field "Mother's Work"}}
+
+		<h2>Father Information</h2>
+		{{field "Father's Name"}}
+		{{field "Father's Email"}}
+		{{field "Father's Home"}}
+		{{field "Father's Cell"}}
+		{{field "Father's Work"}}
+	</div>
+
+
+	<div>
+		<h1>Staff Health Information</h1>
+		{{field "Asthma"}}
+		{{field "Sleepwalking"}}
+		{{field "Medical Conditions"}}
+		{{field "Do you take daily medications?"}}
+		{{field "Are you allergic to insect stings?"}}
+		{{field "Are you allergic to Penicillin?"}}
+		{{field "Are your immunizations up to date?"}}
+		{{field "Date of last Tetanus Booster"}}
+		{{field "Other allergies or dietary restrictions"}}
+
+		<h2>Insurance Information</h2>
+		{{field "Company"}}
+		{{field "Policy Number"}}
+
+		<h2>Emergency Contact</h2>
+		{{field "Name"}}
+		{{field "Relationship"}}
+		{{field "Phone #1"}}
+		{{field "Phone #2"}}
+
+		<h2>Signatures</h2>
+		{{field "Background Check"}}<br/>
+		{{field "Full Name (serves as signature of consent)"}}<br/>
+		{{field "If under 18, Parent/Guardian Name (serves as signature of consent)"}}
+	</div>
+
+
+
+	<div>
+		<h1>Staff Optional Payments</h1>
+		{{field "Would you like to purchase a STAFF t-shirt?" "Online T-Shirt"}}
+<pre style="line-height: 1.2em;">
+{{> payments}}
+{{> payments}}
+{{> payments}}
+{{> payments}}
+{{> payments}}
+{{> payments}}
+</pre>
+	</div>
+</div>
+
+
+
+<!--
+Indentation affects the healthCheckin partial because handlebars inserts
+tabs to keep the indentation accuriate, but the health checkin is in a <pre> tag.
+ -->
+<div class="columns page">
+
+<div>
+<h1>Staff Health Check-In</h1>
+{{> healthCheckin }}
+<hr/>
+{{> healthCheckin }}
+</div>
+
+<div>
+<h1>Staff Health Check-In</h1>
+{{> healthCheckin }}
+<hr/>
+{{> healthCheckin }}
+</div>
+
+<div>
+<h1>Staff Health Check-In</h1>
+{{> healthCheckin }}
+<hr/>
+{{> healthCheckin }}
+</div>
+
+</div>
